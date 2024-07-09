@@ -7,7 +7,7 @@ class Bounty(models.Model):
     energy_cost = models.IntegerField()
     description = models.TextField()
 
-    def __str__():
+    def __str__(self):
         return self.name
 
     class Meta:
