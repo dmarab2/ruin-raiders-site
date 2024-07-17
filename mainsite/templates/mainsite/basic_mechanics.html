@@ -13,6 +13,14 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <body>
+        <nav>
+            <ul>
+                <li><a href="{% url 'landing_page' %}">Home</a></li>
+                <li><a href="{% url 'rules_section' %}">Rules</a></li>
+                <li><a href="{% url 'bounties' %}">Bounties</a></li>
+            </ul>
+        </nav>
+
         <h3> Basic System </h3>
         <p>A character has four stats. These are Vigor, Finesse, Intellect, and Sense. These stats will vary based on what the player allocates points to during character creation.
 Whenever a player wishes to do something with a chance of failure and meaningful consequences (for example, trying to hack a terminal to open a door before a swarm of creatures bears down on them) they must roll 5d6 and aim for numbers under or equal to the relevant stat. The relevant stat is ultimately decided by the GM.

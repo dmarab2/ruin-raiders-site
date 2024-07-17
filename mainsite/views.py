@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Bounty
 
 # Create your views here.
 
@@ -10,3 +11,7 @@ def rules_section(request):
 
 def basic_mechanics(request):
     return render(request, 'mainsite/basic_mechanics.html', {})
+
+def bounty_list(request):
+    bounties = Bounty.objects.all()
+    return render(request, 'mainsite/bounty_list.html', {'bounties': bounties})
